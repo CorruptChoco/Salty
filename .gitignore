@@ -1,6 +1,9 @@
-config.py/
+config.py
 
 # extensions
 *.png
 
-_pycache_
+# Folders
+old_versions/
+__pycache__/
+pics/
