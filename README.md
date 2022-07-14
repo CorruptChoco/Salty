@@ -1,6 +1,5 @@
 # Richard Bot
-*** note to self make a python richard bot file instead of .ipynb for those without jupyter notebook.
-*** also the tournament only script still needs testing since the changes.
+
 ## Description
 I mostly did this for fun and just to challenge myself. I just completed a short bootcamp that dealt with data analytics where python and other topics were touched on. I am NOT a professional and give no guarantees about the state or viability of my coding.
 
@@ -49,4 +48,7 @@ I created this bot to auto-bet on the website "saltybet.com" It was done entirel
 6. I personally use Visual Studio Code to write files and run .ipynb files.
 
 *** also note to anyone using this. currently to stop this during running in jupyter notebooks it often requires restarting the kernal. idk why, working on it.
+
 *** all the printing it does to the console currently if for debugging purposes.
+
+*** the python only version of Richard still throws some error but it seems they can be ignored from online sources. The code still works.
