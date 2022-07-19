@@ -49,6 +49,10 @@ I created this bot to auto-bet on the website "saltybet.com" It was done entirel
 
 *** also note to anyone using this. currently to stop this during running in jupyter notebooks it often requires restarting the kernal. idk why, working on it.
 
+## Known Issues
+1. If you open Richard during betting for an exhibition match he will bet on that match as though it was a normal match.
+2. It is possible for the video of saltybet to lag behind the html updates so that the match finishes while the video of the previous match is ongoing. This happens in my experience when running other programs like games. This causes Richard to not update the database and just go on to the next match. The temporary fix is to just refresh the page to allow the video to sync up. Or you could try changing the code to run in headless mode to avoid completely (unsure of this fix).
+
 *** all the printing it does to the console currently if for debugging purposes.
 
 *** the python only version of Richard still throws some error but it seems they can be ignored from online sources. The code still works.
