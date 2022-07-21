@@ -14,10 +14,15 @@ I created this bot to auto-bet on the website "saltybet.com" It was done entirel
 | Regular Money | Amount Bet | Tournament Money | Amount Bet |
 | :------: |:------:| :-----:| :-------: |
 | <=500 | all in | <=4000 | all in |
-| <=1000 | 50% | <=7000 | 50% |
-| <=2000 | 30% | >7000 | 10% |
-| <=3000 | 20% | | |
-| >3000 | 10% | | |
+| <=1,000 | 50% | <=7000 | 50% |
+| <=2,000 | 30% | >7000 | 10% |
+| <=3,000 | 20% | | |
+| <=250,000 | 10% | | |
+| <=500,000 | 5% | | |
+| <=2,000,000| 2.5% | | |
+| <=3,500,000| 1.25% | | |
+| <=5,000,000| 1.00% | | |
+| >5,000,000| 0.80% | | |
 
 5. Richard then decides who he is going to bet on. There are 3 cases possible.
     *  Neither fighter is found in the database (which is currently still expanding as I run it.) in this case, Random bet.
@@ -52,6 +57,13 @@ I created this bot to auto-bet on the website "saltybet.com" It was done entirel
 ## Known Issues
 1. If you open Richard during betting for an exhibition match he will bet on that match as though it was a normal match.
 2. It is possible for the video of saltybet to lag behind the html updates so that the match finishes while the video of the previous match is ongoing. This happens in my experience when running other programs like games. This causes Richard to not update the database and just go on to the next match. The temporary fix is to just refresh the page to allow the video to sync up. Or you could try changing the code to run in headless mode to avoid completely (unsure of this fix).
+
+## Updates
+### 7/21/2022  
+- Richard will now only bet during exhibition matches if you have >50,000. He will bet 1,000 randomly. These fights are not logged in the Database.
+- Also updated the amounts bet during regular matches to account for larger amounts of money in balance.
+- Added a tracker that prints statistics every 10 matches.
+- fixed a bug that was effecting fights when both fighters are found.
 
 *** all the printing it does to the console currently if for debugging purposes.
 
